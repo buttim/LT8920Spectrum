@@ -1,9 +1,6 @@
 //@main.c
 #include "N76E003.h"
-#include <stdbool.h>
-#include <stddef.h>
-#include <stdint.h>
-#include <stdlib.h>
+
 #include "delay.h"
 #include "radio.h"
 

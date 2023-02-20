@@ -1,6 +1,12 @@
 #ifndef __OLED_H
 #define __OLED_H
 
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 #define OLED_DATA 1
 
 void OLED_Init();

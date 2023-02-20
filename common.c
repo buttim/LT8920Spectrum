@@ -1,4 +1,4 @@
-//!sdcc -c common.c
+//@main.c
 /*---------------------------------------------------------------------------------------------------------*/
 /*                                                                                                         */
 /* Copyright(c) 2016 Nuvoton Technology Corp. All rights reserved.                                         */
@@ -13,14 +13,8 @@
 //***********************************************************************************************************
 
 #include "N76E003.h"
-#include <stdbool.h>
-#include <stddef.h>
-#include <stdint.h>
-#include <stdlib.h>
 #include "Common.h"
 #include "Delay.h"
-//~ #include "SFR_Macro.h"
-//~ #include "Function_define.h"
 
 #define FOSC_160000
 //----------------------------------------------------------------------------------

@@ -1,10 +1,7 @@
+//@main.c
 #include "N76E003.h"
 #include "oled.h"
 #include "oledfont.h"
-#include <math.h>
-#include <stdbool.h>
-#include <stddef.h>
-#include <stdint.h>
 
 /*SCL    P1.3
 SDA      P1.4*/
@@ -19,7 +16,6 @@ SDA      P1.4*/
 #define SYS_DIV 1
 #define I2C_CLOCK 2
 #define TEST_OK 0x00
-bool I2C_Reset_Flag;
 
 #define OLED_CMD 0  //写命令
 #define OLED_DATA 1 //写数据
@@ -38,9 +34,7 @@ bool I2C_Reset_Flag;
 (必须配置为开漏模式，并加上拉电阻)
 **********************************************/
 void Init_I2C(void) {
-  P1M2 |= 0x18;
-  P1M1 |= 0x18;
-  // P13_OpenDrain_Mode;					// Modify SCL pin to Open drain mode.
+  P13_OpenDrain_Mode;					// Modify SCL pin to Open drain mode.
   // don't forget the pull high resister in circuit P14_OpenDrain_Mode;
   // // Modify SDA pin to Open drain mode. don't forget the pull high resister in
   // circuit

@@ -1,5 +1,12 @@
 #ifndef __COMMON_H
 #define __COMMON_H
+
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 #define     CID_READ				0x0B
 #define     DID_READ				0x0C
 

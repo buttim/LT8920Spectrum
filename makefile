@@ -13,6 +13,7 @@ all: main
 main: $(OBJ)
 	sdcc -o build/ $(SDCCOPTS) $^
 	cp build/$@.ihx build/$@.hex
+	#hex2bin build/$@.hex
 
 clean:
 	rm -f build/*

@@ -1,6 +1,12 @@
 #ifndef __RADIO_H
 #define __RADIO_H
 
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /*
 	CS		P1.2
 	SCK		P1.0
